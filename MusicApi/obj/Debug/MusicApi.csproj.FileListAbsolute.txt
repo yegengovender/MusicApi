@@ -69,3 +69,6 @@
 \\vmware-host\Shared Folders\yegengovender\Projects\Github\MusicApi\MusicApi\MusicApi\obj\Debug\MusicApi.csprojResolveAssemblyReference.cache
 \\vmware-host\Shared Folders\yegengovender\Projects\Github\MusicApi\MusicApi\MusicApi\obj\Debug\MusicApi.dll
 \\vmware-host\Shared Folders\yegengovender\Projects\Github\MusicApi\MusicApi\MusicApi\obj\Debug\MusicApi.pdb
+\\vmware-host\Shared Folders\yegengovender\Projects\Github\MusicApi\MusicApi\MusicApi\bin\System.Web.Cors.dll
+\\vmware-host\Shared Folders\yegengovender\Projects\Github\MusicApi\MusicApi\MusicApi\bin\System.Web.Http.Cors.dll
+\\vmware-host\Shared Folders\yegengovender\Projects\Github\MusicApi\MusicApi\MusicApi\bin\System.Web.Http.Cors.xml
