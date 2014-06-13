@@ -44,13 +44,13 @@ namespace MusicApi.Controllers
         }
 
 
-        [HttpGet]
+        [HttpGet, HttpPost]
         public NameList[] Categories()
         {
             return (CategoryList);
         }
 
-        [HttpGet]
+        [HttpGet, HttpPost]
         public HttpResponseMessage CategoryFilter(string category)
         {
             var url = string.Format(CategoryUrl, category);
@@ -58,14 +58,14 @@ namespace MusicApi.Controllers
             return JsonRequest(genres);
         }
 
-        [HttpGet]
+        [HttpGet, HttpPost]
         public HttpResponseMessage Genres()
         {
             var genres = _webApiHelper.GetJsonResult(GenresUrl);
             return JsonRequest(genres);
         }
 
-        [HttpGet]
+        [HttpGet, HttpPost]
         public HttpResponseMessage Stations(int[] stationIds)
         {
             var url = MultiStationsUrl(stationIds);
@@ -73,7 +73,7 @@ namespace MusicApi.Controllers
             return JsonRequest(stations);
         }
 
-        [HttpGet]
+        [HttpGet, HttpPost]
         public HttpResponseMessage StationDetails(int stationId)
         {
             var url = string.Format(StationDetailsUrl, stationId);
@@ -81,7 +81,7 @@ namespace MusicApi.Controllers
             return JsonRequest(stationDetails);
         }
 
-        [HttpGet]
+        [HttpGet, HttpPost]
         public HttpResponseMessage StationNext(int stationId)
         {
             var url = string.Format(StationNextUrl, stationId);
