@@ -3,7 +3,6 @@ using System.Net.Http;
 using System.Text;
 using System.Web.Helpers;
 using System.Web.Http;
-using System.Web.Script.Serialization;
 using MusicApi.Models;
 
 namespace MusicApi.Controllers
@@ -48,7 +47,6 @@ namespace MusicApi.Controllers
         [HttpGet]
         public NameList[] Categories()
         {
-            //var stations = new JavaScriptSerializer().Deserialize<object>(CategoryList);
             return (CategoryList);
         }
 
