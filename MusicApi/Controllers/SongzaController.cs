@@ -3,13 +3,12 @@ using System.Net.Http;
 using System.Text;
 using System.Web.Helpers;
 using System.Web.Http;
-using System.Web.Http.Cors;
 using System.Web.Script.Serialization;
 using MusicApi.Models;
 
 namespace MusicApi.Controllers
 {
-    [EnableCors(origins: "http://musicweb.azurewebsites.net", headers: "*", methods: "*")]
+    [AllowCrossSiteJson]
     public class SongzaController : ApiController
     {
         //todo: implement service for audio player control http://stackoverflow.com/questions/15485768/changing-html5s-source-src-attribute-takes-no-effect-wtih-angularjs
